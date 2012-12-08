@@ -19,7 +19,7 @@
 
 package com.androidHelloWorld.app;
 
-import android.app.Activity;
+//import android.app.Activity;
 import android.os.Bundle;
 import org.apache.cordova.*;
 

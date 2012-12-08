@@ -4,7 +4,7 @@
       geocoder = new google.maps.Geocoder();
                       
       $('#button-get-reverse-lookup').click(function(){
-        navigator.geolocation.getCurrentPosition(onGetCurrentPositionSuccess, onGetCurrentPositionError);
+        navigator.geolocation.getCurrentPosition(onGetCurrentPositionSuccess, onGetCurrentPositionError,{enableHighAccuracy:true});
       });
     });
                     
@@ -17,8 +17,8 @@
       //API https://developers.google.com/maps/documentation/geocoding/
                         
       // York airport - uncomment to test
-      //var lat = parseFloat(34.98);  
-      //var lng = parseFloat(-81.06 );
+      var lat = parseFloat(34.98);  
+      var lng = parseFloat(-81.06 );
                         
       // tiburon, california
       //var lat = parseFloat(37.872685);
