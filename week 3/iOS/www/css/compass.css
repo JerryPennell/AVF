@@ -1,16 +1,37 @@
-#obj{
-	width: 50px;
-	height: 50px;
-	background-color: #0066CC;
-	position: absolute;
-	top: 0;
-	left: 0;
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: -webkit-gradient(linear, left top, right bottom, from(#EBEDE9), to(#888A85));
 }
 
-#obj_wall{
-	margin:10px auto;
-	width:200px;
-	height:200px;
-	border:1px solid blue;
-	position:relative;
+#faceCanvas
+{
+    z-index: -1;
+}
+
+#needleCanvas
+{
+    position: absolute;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.label
+{
+    font-family: sans-serif;
+    color: #ccc;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+button
+{
+    position: absolute;
+    z-index: 2;
 }
